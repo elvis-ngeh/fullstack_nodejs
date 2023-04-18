@@ -12,7 +12,7 @@ jobs:
       - name: checkout code 
         uses: actions/checkout@v3
       - name: install dependencies
-        run: npm install
+        run: npm install -g npm@5
       - name: Linter (ESlint)
         run: npm run lint 
       - name: Formatter (prettier)
