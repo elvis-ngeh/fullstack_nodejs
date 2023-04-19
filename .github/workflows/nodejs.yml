@@ -11,12 +11,12 @@ jobs:
     steps:
       - name: checkout code 
         uses: actions/checkout@v3
+      - name: install npm react-scripts
+        run: npm install react-scripts --save-dev
       - name: install dependencies
         run: npm install -g npm@6
       - name: npm start 
         run: npm start 
-      - name: install npm react-scripts
-        run: npm install react-scripts --save-dev
       - name: Linter (ESlint)
         run: npm run lint 
       - name: Formatter (prettier)
